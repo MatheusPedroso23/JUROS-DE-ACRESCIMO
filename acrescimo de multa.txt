@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+float calcularMulta(float mensalidade, int diasAtraso, float taxaMulta){
+    float multa = mensalidade * taxaMulta;
+    float multaDiaria = mensalidade * 0.01;
+    multa += diasAtraso * multaDiaria;
+    return mensalidade + multa;
+}
+
+int main(){
+    float mensalidade = 100.0;
+    int diasAtraso = 5;
+    float taxaMulta = 0.1;
+
+    float valorTotal = calcularMulta(mensalidade, diasAtraso, taxaMulta);
+    printf("Valor total a ser pago: R$%.2f\n", valorTotal);
+
+    return 0;
+}
