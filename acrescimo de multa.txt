@@ -8,8 +8,8 @@ float calcularMulta(float mensalidade, int diasAtraso, float taxaMulta){
 }
 
 int main(){
-    float mensalidade = 100.0;
-    int diasAtraso = 5;
+    float mensalidade = 600.0;
+    int diasAtraso = 10;
     float taxaMulta = 0.1;
 
     float valorTotal = calcularMulta(mensalidade, diasAtraso, taxaMulta);
